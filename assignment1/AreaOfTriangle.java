@@ -5,9 +5,9 @@ public class AreaOfTriangle {
         Scanner input = new Scanner(System.in);
         double base = input.nextDouble();
         double height = input.nextDouble();
-        double areaInches2 = 0.5 * base * height;
-        double areaCm2 = areaInches2 * 6.4516;
-        System.out.println("The area of a triangle in square inches is " + areaInches2 + " and square centimeters is " + areaCm2);
+        double areaCm2 = 0.5 * base * height;
+        double areaInches2 = areaCm2 / 6.4516;
+        System.out.println("The Area of the triangle in sq in is " + areaInches2 + " and sq cm is " + areaCm2);
         input.close();
     }
 }
